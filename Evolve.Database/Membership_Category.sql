@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Membership_Category]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(MAX) NOT NULL, 
+    [Description] NVARCHAR(MAX) NOT NULL
+)

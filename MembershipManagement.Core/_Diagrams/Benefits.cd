@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MembershipManagement.Core.Model.Benefit" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAEAAAAAAQAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Benefit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MembershipManagement.Core.Model.BenefitBuilder" Collapsed="true">
+    <Position X="6.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Model\BenefitBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MembershipManagement.Core.Model.BenefitBuilderFactory">
+    <Position X="14.5" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\BenefitBuilderFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MembershipManagement.Core.Model.Circulation" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAgiAACAAAAAEAACCAAIAgIAAAQAAAAAABAA=</HashCode>
+      <FileName>Model\Circulation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MembershipManagement.Core.Model.CirculationBuilder" Collapsed="true">
+    <Position X="7.5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAQAAAAAAAAAAAAAAAAAgAAAAAAAAQGAAUA=</HashCode>
+      <FileName>Model\CirculationBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MembershipManagement.Core.Model.NullBenefit" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NullBenefit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MembershipManagement.Core.Model.TimedFacility" Collapsed="true">
+    <Position X="12" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\TimedFacility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MembershipManagement.Core.Model.TimePeriod">
+    <Position X="14.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\TimePeriod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MembershipManagement.Core.Model.TimedFacilityBuilder" Collapsed="true">
+    <Position X="5" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\TimedFacilityBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MembershipManagement.Core.Model.BenefitType">
+    <Position X="12.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAQAIAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enums\BenefitType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MembershipManagement.Core.Model.CirculationType">
+    <Position X="14.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIABAAAAAAAAAAAAgAAAAAQAAAAAAIAA=</HashCode>
+      <FileName>Model\Enums\CirculationType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
