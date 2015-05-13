@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using SharedKernal.Infrastructure.Domain.Specification;
 
-namespace MembershipManagement.Core
+namespace MembershipManagement.Core.Model.MembershipCategory.Specifications
 {
-    public class MembershipCategoryBusinessRules
+    internal static class MembershipCategoryBusinessRules
     {
+        public static readonly BusinessRule CategoryCannotContain
     }
 }

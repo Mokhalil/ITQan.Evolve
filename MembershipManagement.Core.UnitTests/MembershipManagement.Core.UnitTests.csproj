@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="CirculationBenefitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MembershipCategoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MembershipManagement.Core\MembershipManagement.Core.csproj">
