@@ -39,13 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\MembershipCategory\Exceptions\InvalidMembershipCategoryException.cs" />
+    <Compile Include="Model\MembershipCategory\Exceptions\MembershipCategoryNameIsNotUniqueException.cs" />
     <Compile Include="Model\MembershipCategory\IMembershipCategoryRepository.cs" />
     <Compile Include="Model\MembershipCategory\Specifications\CategoryBenefitsAreUniqueSpecification.cs" />
     <Compile Include="Model\MembershipCategory\Specifications\CategoryBusinessRulesFactory.cs" />
     <Compile Include="Model\MembershipCategory\Specifications\CategoryNameIsUniqueSpecification.cs" />
     <Compile Include="Model\MembershipCategory\Specifications\CategoryDeletionSpecification.cs" />
     <Compile Include="Model\MembershipCategory\MembershipCategory.cs" />
-    <Compile Include="Model\MembershipCategory\Specifications\CategoryBenefitsAreValidSpecification.cs" />
     <Compile Include="Model\MembershipCategory\Specifications\MembershipCategoryBusinessRules.cs" />
     <Compile Include="Model\Enums\CirculationType.cs" />
     <Compile Include="Model\Benefits\Specifications\CirculationBenefitBusinessRules.cs" />
@@ -69,7 +70,6 @@
   <ItemGroup>
     <Folder Include="DTO\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Model\MembershipCategory\Exceptions\" />
     <Folder Include="Model\Services\" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="_Diagrams\Benefits.cd" />
+    <None Include="_Diagrams\Benefits_Model.cd" />
     <None Include="_Diagrams\Membership.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

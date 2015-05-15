@@ -8,5 +8,6 @@ namespace SharedKernal.Infrastructure.Domain
 {
     public interface AggregateRoot
     {
+        bool CanBeSaved { get; }
     }
 }

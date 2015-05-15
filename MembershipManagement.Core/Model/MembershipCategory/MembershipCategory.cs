@@ -6,16 +6,18 @@ using MembershipManagement.Core.Model;
 using MembershipManagement.Core.Model.Benefits;
 using MembershipManagement.Core.Model.MembershipCategory.Specifications;
 using SharedKernal.Infrastructure.Domain;
+using MembershipManagement.Core.Model.MembershipCategory.Exceptions;
 
 namespace MembershipManagement.Core
 {
     public class MembershipCategory : Entity<Guid>, AggregateRoot
     {
-        private MembershipCategoryBenefitsAreValidSpecification _categoryBenefitsAreValid;
-        private List<Benefit> _benefits = new List<Benefit>(); 
+        //private MembershipCategoryBenefitsAreValidSpecification _categoryBenefitsAreValid;
+        private CategoryNameIsUniqueSpecification _categoryNameIsUnique;
+        private List<Benefit> _benefits = new List<Benefit>();
 
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public string Name { get; protected set; }
+        public string Description { get; protected set; }
 
         public List<Benefit> Benefits
         {
@@ -28,23 +30,32 @@ namespace MembershipManagement.Core
         protected MembershipCategory(Guid id)
             : base(id)
         {
-            _categoryBenefitsAreValid = new MembershipCategoryBenefitsAreValidSpecification();
+          //  _categoryBenefitsAreValid = new MembershipCategoryBenefitsAreValidSpecification();
+            _categoryNameIsUnique = new CategoryNameIsUniqueSpecification();
         }
 
         protected override void Validate()
         {
-            if (!_categoryBenefitsAreValid.IsSatisfiedBy(this))
-                throw new Exception();
+            //if (!_categoryBenefitsAreValid.IsSatisfiedBy(this))
+            //    throw new Exception();
+        }
+
+        public void SetCategoryName(string name)
+        {
+            if (String.IsNullOrEmpty(name))
+                throw new InvalidMembershipCategoryException("Memebership Category Name Cannot Be Set To Null or Empty");
+
+            this.Name = name;          
         }
 
         public void NewBenefit( Benefit benefit)
         {
-            Benefits.Add(benefit);
-            if (!_categoryBenefitsAreValid.IsSatisfiedBy(this))
-            {
-                Benefits.Remove(benefit);
+            //Benefits.Add(benefit);
+            //if (!_categoryBenefitsAreValid.IsSatisfiedBy(this))
+            //{
+            //    Benefits.Remove(benefit);
                
-            }
+            //}
         }
 
         public void RemoveBenefit()
@@ -78,6 +89,11 @@ namespace MembershipManagement.Core
                 category.Benefits.AddRange(benefits);
 
             return category;
+        }
+
+        public bool CanBeSaved
+        {
+            get { throw new NotImplementedException(); }
         }
     }
 }

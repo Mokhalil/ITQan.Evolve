@@ -4,6 +4,6 @@ namespace MembershipManagement.Core.Model.MembershipCategory.Specifications
 {
     internal static class MembershipCategoryBusinessRules
     {
-        public static readonly BusinessRule CategoryCannotContain
+        //public static readonly BusinessRule CategoryCannotContain
     }
 }
